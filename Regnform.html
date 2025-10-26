@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <fieldset>
+        <form action="/submit.html" name="registration" target="_blank" method="post">
+            <h1 style="text-align: center;">Student Registration Form</h1>
+            <hr>
+            <br>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <br><br>
+
+            <label for="date">DOB:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email ID" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label>Enter your Gender:</label>
+            <div class="Gender-group">
+                <input type="radio" name="gender" value="male" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="others" id="others" required>
+                <label for="others">Others</label>
+            </div>
+            <br>
+
+            <label for="course">Course</label>
+            <select name="course" id="course" required>
+                <option value="none">--Select Your Course--</option>
+                <option value="core">B.Tech CSE</option>
+                <option value="aiml">B.Tech AIML</option>
+                <option value="aiml">B.Tech CSE(AIML)</option>
+                <option value="ds">B.Tech CSE(Data Science)</option>
+            </select>
+            <br><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="address" rows="5" cols="35" required></textarea>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+            <br><br><hr>
+            <p style="text-align: center;">&copy; 2025 Student Registration Portal</p>
+        </form>
+    </fieldset>
+</body>
+</html>
